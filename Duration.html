@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	 body{
+		background-image: url("https://image.shutterstock.com/image-photo/chemist-medicines-arranged-shelves-pharmacy-260nw-1341202604.jpg");
+		min-height: 650px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+      .container{
+      	background-color:#D3D3D3;
+      	margin-left: 250px;
+      	margin-right: 200px;
+      	margin-top:50px;
+      	padding-top: 40px;
+      	padding-left: 40px;
+      	border-radius: 30px;
+      }
+      .header{
+      	margin-top: -20px;
+      	margin-left: 360px;
+      }
+      input[type=text]{
+           width: 50%;
+          padding: 12px;
+          margin-bottom: 10px;
+          border-radius: 25px;
+          border: none;
+          margin-right: 40px;
+          margin-left:200px;
+          font-family: Josefin Sans;
+        }
+         .log{
+            margin-left:430px;
+            font-size: 30px;
+            color:black;
+		}
+		.heads{
+			font-size: 30px;
+		    margin-left:500px;
+            margin-bottom:125px;
+		}
+	</style>
+</head>
+<body>
+<form action="/predictdurationsales" method="post">
+	 <span class = "heads">DRUGS STORE SALES FORECAST</span>
+	<a class ="log" href = "/">logout</a><br>
+  <h1 style="margin-left: 30px;">Enter details</h1>
+   <div class = "container">
+   	   <div class = "main">
+   	   <h3 style="margin-left: 200px;">Enter ID</h3>
+   	   <input type = "text" placeholder="Enter ID" name="ids">
+   	   <h3 style="margin-left: 200px;">Enter From date</h3>
+   	   <h3><input type = "text" placeholder="Enter date" name="date1"></div></h3>   	
+       <h3 style="margin-left: 200px;">Enter To date</h3>
+       <h3><input style="margin-bottom: 10px;" type = "text" placeholder="Enter date" name="date2"></h3>     
+   	   <input style = "margin-left:400px;margin-bottom: 40px;" type = "submit" value="submit">
+   </div>
+   </div>
+</form>
+</body>
+</html>
